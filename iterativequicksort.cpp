@@ -60,11 +60,11 @@ int main(){
         arr[i] = rand() % 200000 + 1; // generate random number between 500 to 20000
     }
 
-    cout << "Original array: ";
+    /*cout << "Original array: ";
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
     }
-    cout << endl;
+    cout << endl;*/
 
     /*int arr[] = {10, 7, 8, 9, 1, 5};
     int n = sizeof(arr)/sizeof(arr[0]);
@@ -75,11 +75,11 @@ int main(){
     return 0;*/
     quickSortIterative(arr, 0, n-1);
 
-    cout << "Sorted array: ";
+    /*cout << "Sorted array: ";
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
     }
-    cout << endl;
+    cout << endl;*/
 
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
